@@ -1,6 +1,16 @@
 import './styles.css';
 
+
 export function Exercise() {
+
+  const animal = {type: "horse", age: 5, name: "john",}
+  
+animal.age = 10
+
+console.log (animal.age)
+
+
+
   function multiply(num1, num2) {
     return num1 * num2;
   }
@@ -33,6 +43,8 @@ export function Exercise() {
           <code>{getWelcomeMessage('Jon', 129384)}</code>
         </pre>
       </section>
+      kumunikat funkcji {getWelcomeMessage("Wojtek",5)}
+
     </div>
   );
 }
