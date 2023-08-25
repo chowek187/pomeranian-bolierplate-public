@@ -2,16 +2,19 @@ import { useState } from 'react';
 import './styles.css';
 
 export const ReactOnClick = () => {
-  // const [isClicked, setIsClicked] = useState(false);
+  const [value, setValue] = useState(5);
 
-  // const text = isClicked ? 'Kliknięte' : 'Nie kliknięte';
-  const [count, setCount] = useState(0);
-
+  function handleClick() {
+    setValue(value - 1);
+  }
+  if (value !== 0) {
+    setValue('Odliacznie zakończone');
+  }
   return (
     <div>
-      <h1>Cześć!</h1>
-      <p>Naciśnięto {count} razy</p>
-      <button onClick={() => setCount(count + 1)}> Naciśnij mnie </button>
+      <p>Czesc</p>
+      <button onClick={handleClick}>{value}</button>
+      <span>Odliczanie zakończone</span>
     </div>
   );
 };
