@@ -6,6 +6,8 @@ background-image: url('./1.jpg');
 background-size: cover;
 background-position: center center;
 background-repeat: repeat; /*no repeat*/
-
+filter: grayscale(11%) sepia(22%) hue-rotate(55deg) saturate(232%);
+-webkit-filter: grayscale(11%) sepia(22%) hue-rotate(55deg) saturate(232%);
+-moz-filter: grayscale(11%) sepia(22%) hue-rotate(55deg) saturate(232%);
 
 }
