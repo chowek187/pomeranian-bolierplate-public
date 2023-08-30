@@ -15,7 +15,8 @@ export const Colors = () => {
       </div>
       <hr />
       <div>
-        <div className="opacity">Jestem divem z textem</div>
+        <div className="opacity">Jestem divem z tekstem</div>
+        <div className="rgbaopacity">Jestem divem z tekstem</div>
       </div>
     </>
   );

@@ -23,15 +23,12 @@
 }
 
 .opacity {
-background-color: greenyellow;
-padding: 20px;
-opacity: 0.60;
-
-
+  background-color: greenyellow;
+  padding: 20px;
+  opacity: 0.6;
 }
 
 .rgbaopacity {
-
-  background-color: rgb(0, 221, 255,1)
-padding: 20px;
+  background-color: rgb(0, 221, 255, 0.1);
+  padding: 20px;
 }
