@@ -6,6 +6,7 @@ import { EditIcon } from '../Components/Icons/EditIcon';
 import { ElementIcon } from '../Components/Icons/ElementIcon';
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 import { CalendarIcon } from '../Components/Icons/CalendarIcon';
+import { MessageIcon } from '../Components/Icons/MessageIcon';
 
 export function AppAside() {
   return (
@@ -35,6 +36,10 @@ export function AppAside() {
           <li className="aside-row">
             <PersonalCardIcon />
             <NavLink to="Blog">Blog</NavLink>
+          </li>
+          <li className="aside-row">
+            <MessageIcon />
+            <NavLink to="FAQ">FAQ</NavLink>
           </li>
         </ul>
       </nav>

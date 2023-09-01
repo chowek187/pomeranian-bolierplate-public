@@ -10,6 +10,8 @@ import { Exercises } from './App/Exercises';
 import { CV } from './App/Components/CV/CV';
 import { Calendar } from './App/Components/Calendar/Calendar';
 import { Blog } from './App/Blog/Blog';
+import { FAQ } from './App/FAQ/FAQ';
+import { SingleQuestion } from './App/FAQ/SingleQuestion';
 
 export function App() {
   return (
@@ -23,6 +25,8 @@ export function App() {
           <Route path="CV/*" element={<CV />} />
           <Route path="Calendar/*" element={<Calendar />} />
           <Route path="Blog/*" element={<Blog />} />
+          <Route path="FAQ/*" element={<FAQ />} />
+          <Route path="SingleQuestion/*" element={<SingleQuestion />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
