@@ -5,6 +5,7 @@ import { ColorsRouterMetaData } from './Colors/router-data';
 import { CssAnimationsRouterMetaData } from './CssAnimations/router-data';
 
 import { blockRouterMetaData as blockRouterMetaData121220231 } from './Exercise-example-12-12-2023-1/router-data';
+import { HTMLTablesRouterMetaData } from './HTMLTables/router-data';
 import { ImageFilesRouterMetaData } from './ImageFiles/router-data';
 import { MediaFilesMetaData } from './MediaFiles/router-data';
 
@@ -23,5 +24,6 @@ export const blockRouterMetaData = [
   backgroundsRouterMetaData,
   BoxModelMetaData,
   MediaFilesMetaData,
+  HTMLTablesRouterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
