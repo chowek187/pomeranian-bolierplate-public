@@ -1,0 +1,12 @@
+.html {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.script {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

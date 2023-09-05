@@ -12,6 +12,7 @@ import { Calendar } from './App/Components/Calendar/Calendar';
 import { Blog } from './App/Blog/Blog';
 import { FAQ } from './App/FAQ/FAQ';
 import { SingleQuestion } from './App/FAQ/SingleQuestion';
+import { TechStack } from './App/TechStack/TechStack';
 
 export function App() {
   return (
@@ -26,6 +27,7 @@ export function App() {
           <Route path="Calendar/*" element={<Calendar />} />
           <Route path="Blog/*" element={<Blog />} />
           <Route path="FAQ/*" element={<FAQ />} />
+          <Route path="tech-stack/*" element={<TechStack />} />
           <Route path="SingleQuestion/*" element={<SingleQuestion />} />
           <Route path="*" element={<NotFound />} />
         </Route>
