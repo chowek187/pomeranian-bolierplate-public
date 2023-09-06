@@ -11,6 +11,7 @@ import { FloatsAndPositioningExerciseRouterMetaData } from './FloatsAndPositioni
 import { HTMLTablesRouterMetaData } from './HTMLTables/router-data';
 import { ImageFilesRouterMetaData } from './ImageFiles/router-data';
 import { MediaFilesMetaData } from './MediaFiles/router-data';
+import { RWDRouterMetaData } from './RWD/router-data';
 
 import { htmlCssRouterMetaData } from './SelectorsAndCascade/router-data';
 import { StandardTagsRouterMetaData } from './StandardTags/router-data';
@@ -33,5 +34,6 @@ export const blockRouterMetaData = [
   ArrayRenderingRouterMetaData,
   FloatsAndPositioningRouterMetaData,
   FloatsAndPositioningExerciseRouterMetaData,
+  RWDRouterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
