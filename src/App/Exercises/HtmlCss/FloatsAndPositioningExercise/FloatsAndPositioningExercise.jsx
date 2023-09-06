@@ -1,10 +1,8 @@
 import './styles.css';
-import first from '../ImageFiles/1.jpg';
 
-export const FloatsAndPositioning = () => {
+export const FloatsAndPositioningExercise = () => {
   return (
-    <div className="container">
-      <img src={first} />
+    <div>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quia
         inventore cum alias. Dolorum, aut labore ipsam dicta odio magni nisi

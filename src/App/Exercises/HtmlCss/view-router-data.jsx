@@ -7,6 +7,7 @@ import { CssAnimationsRouterMetaData } from './CssAnimations/router-data';
 
 import { blockRouterMetaData as blockRouterMetaData121220231 } from './Exercise-example-12-12-2023-1/router-data';
 import { FloatsAndPositioningRouterMetaData } from './FloatsAndPositioning/router-data';
+import { FloatsAndPositioningExerciseRouterMetaData } from './FloatsAndPositioningExercise/router-data';
 import { HTMLTablesRouterMetaData } from './HTMLTables/router-data';
 import { ImageFilesRouterMetaData } from './ImageFiles/router-data';
 import { MediaFilesMetaData } from './MediaFiles/router-data';
@@ -31,5 +32,6 @@ export const blockRouterMetaData = [
   TableTenisRouterMetaData,
   ArrayRenderingRouterMetaData,
   FloatsAndPositioningRouterMetaData,
+  FloatsAndPositioningExerciseRouterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
