@@ -1,17 +1,17 @@
 import React from 'react';
 
-import { JsStringCoding } from './JsStringCoding';
+import { JsStringConversion } from './JsStringConversion';
 
-export const JsStringCodingRouterMetaData = {
-  path: 'js-string-coding',
+export const JsStringConversionRouterMetaData = {
+  path: 'js-string-conversion',
 
   date: '07-09-2023',
 
-  linkLabel: 'JsStringCoding',
+  linkLabel: 'Konwersja stringow',
 
   blockNo: 19,
 
-  element: <JsStringCoding />,
+  element: <JsStringConversion />,
 
-  tags: ['js string coding'],
+  tags: ['js string conversion'],
 };
