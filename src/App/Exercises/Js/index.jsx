@@ -11,6 +11,7 @@ import {
   blockRouterData as jsBlockRouterData,
   blockRouterMetaData as jsBlockRouterMetaData,
 } from './view-router-data';
+import { Timer } from './SetTimeout/Timer';
 
 export function JsExercises() {
   const element = useRoutes(jsBlockRouterData);
@@ -51,6 +52,7 @@ export function JsExerciseItem() {
       <hr />
 
       <div className="exercise-item-content">{element}</div>
+      <Timer />
     </div>
   );
 }

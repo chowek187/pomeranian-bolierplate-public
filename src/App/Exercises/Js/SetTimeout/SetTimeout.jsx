@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-
+import { Timer } from './Timer';
 export function SetTimeout() {
   const [count, setCount] = useState(0);
   const [doubleCount, setDoubleCount] = useState(0);
@@ -9,6 +9,12 @@ export function SetTimeout() {
   useEffect(() => {
     console.log('useEffect na każdej zmianie');
   });
+  // Uważać na zależności między useEffectami by nie stworzyć sobie pętli
+  //   useEffect(() => {
+  //     console.log('useEffect na każdej zmianie');
+  //     setCount((prev) => prev + 1);
+  //   });
+
   // Nasłuchuje zmian wartości count
   useEffect(() => {
     console.log('useEffect na zmianie count');
@@ -38,6 +44,7 @@ export function SetTimeout() {
         <div>Count {count}</div>
         <div>DoubleCount {doubleCount}</div>
       </div>
+      <Timer />
     </div>
   );
 }
