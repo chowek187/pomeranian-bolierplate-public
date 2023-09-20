@@ -1,0 +1,19 @@
+.clicked-button {
+    border-radius: 10px;
+    width: 150px;
+    padding: 15px;
+    margin: 10px;
+    color: azure;
+    background-color: rgb(224, 33, 33);
+
+}
+
+.notClicked-button{
+    border-radius: 10px;
+    width: 150px;
+    padding: 15px;
+    margin: 10px;
+    color: azure;
+    background: var(--secondary-secondary, #201a72);
+
+}

@@ -1,0 +1,76 @@
+.game-view {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 450px; 
+}
+
+.margin-game {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 400px;
+}
+
+.grey-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    width: 150px;
+    height: 32px;
+}
+
+.stop-button {
+   
+    text-align: center;
+    background-color: #d63c3c;
+    color: #ebebeb;
+    border-radius: 10px;
+    width: 150px;
+    height: 32px;
+
+}
+.grey-area {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+    
+}
+
+
+
+.square-box {
+
+    background-color: #ebebeb;
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangles {
+
+    display: grid;
+    grid-template-rows: repeat(2, 122px);
+    grid-template-columns: repeat(5, 122px);
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 9px 9px;
+}
+
+.green-box {
+
+    background-color: green;
+}
+
+.red-box {
+
+    background-color: #d63c3c;
+}
