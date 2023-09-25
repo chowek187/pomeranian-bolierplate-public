@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Button } from './Button/Button';
 
-export const MenuView = () => {
+export const MenuView = ({ setClickStartButton, clickStartButton }) => {
   const [timeButton, setTimeButton] = useState(null);
   const handleClick = (event) => {
     console.log(event.target.id);
@@ -12,11 +12,10 @@ export const MenuView = () => {
     console.log(event.target.id);
     setMoleButton(event.target.id);
   };
-  const [startButton, setStartButton] = useState(null);
-  const handleStartButton = (event) => {
-    console.log(event.target.id);
-    setStartButton(event.target.id);
-  };
+
+  function handleStartClick() {
+    setClickStartButton(!clickStartButton);
+  }
   return (
     <>
       <h1>KRET</h1>
@@ -76,8 +75,8 @@ export const MenuView = () => {
           <div className="button-general">
             <Button
               id={7}
-              handleClick={handleStartButton}
-              timeButton={startButton}
+              handleClick={handleStartClick}
+              timeButton={clickStartButton}
               label={'START'}
             />
           </div>
