@@ -1,11 +1,16 @@
 import { useState } from 'react';
 import { Button } from './Button/Button';
 
-export const MenuView = ({ setClickStartButton, clickStartButton }) => {
+export const MenuView = ({
+  setClickStartButton,
+  clickStartButton,
+  setHowManyMinutes,
+}) => {
   const [timeButton, setTimeButton] = useState(null);
-  const handleClick = (event) => {
+  const handleClick = (event, value) => {
     console.log(event.target.id);
     setTimeButton(event.target.id);
+    setHowManyMinutes(value);
   };
   const [moleButton, setMoleButton] = useState(null);
   const handleMoleButton = (event) => {
@@ -16,6 +21,7 @@ export const MenuView = ({ setClickStartButton, clickStartButton }) => {
   function handleStartClick() {
     setClickStartButton(!clickStartButton);
   }
+
   return (
     <>
       <h1>KRET</h1>
@@ -29,19 +35,19 @@ export const MenuView = ({ setClickStartButton, clickStartButton }) => {
           <div className="button-general">
             <Button
               id={1}
-              handleClick={handleClick}
+              handleClick={(event) => handleClick(event, 60)}
               timeButton={timeButton}
               label={'1 minuta'}
             />
             <Button
               id={2}
-              handleClick={handleClick}
+              handleClick={(event) => handleClick(event, 120)}
               timeButton={timeButton}
               label={'2 minuty'}
             />
             <Button
               id={3}
-              handleClick={handleClick}
+              handleClick={(event) => handleClick(event, 180)}
               timeButton={timeButton}
               label={'3 minuty'}
             />

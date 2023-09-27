@@ -31,13 +31,16 @@ export default function useCountdown() {
   return { start, secondsLeft };
 }
 
-export const GameView = () => {
+export const GameView = ({ howManyMinutes }) => {
   const [score, setScore] = useState(0);
   const [krecikMap, setKrecikMap] = useState(InitialMap);
   const { start, secondsLeft } = useCountdown();
+
+  let interval;
+
   useEffect(() => {
-    start(60);
-    const interval = setInterval(() => {
+    start(howManyMinutes);
+    interval = setInterval(() => {
       const placeOfMole = Math.floor(Math.random() * (10 - 1 + 1) + 1);
       setKrecikMap(
         krecikMap.map((field, index) => {
@@ -71,7 +74,7 @@ export const GameView = () => {
       );
     });
   };
-  //const [score, setScore] = useState(0);
+
   function handleMoleClick(item) {
     if (item.isMolePresent) {
       setScore((prev) => prev + 1);
@@ -89,8 +92,8 @@ export const GameView = () => {
     <>
       <h1>KRET</h1>
       <p>
-        Gra polegająca na podąaniu za krecikiem i trafieniu na kwadrat, w którym
-        się pojawił.
+        Gra polegająca na podązaniu za krecikiem i trafieniu na kwadrat, w
+        którym się pojawił.
       </p>
       <div className="game-view">
         <div className="margin-game">
