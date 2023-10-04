@@ -1,0 +1,27 @@
+.calosc {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 140px;
+}
+
+.dodaj {
+
+    color: #FFFFFF;
+    background-color: #FE3756;
+    border-radius: 10px;
+    display: flex;
+    width: 163px;
+    align-items: flex-start;
+    gap: 16px;
+    flex-shrink: 0;
+   
+
+
+}
+
+.nick {
+
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
