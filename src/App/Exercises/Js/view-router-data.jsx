@@ -29,6 +29,7 @@ import { JsonRouterMetaData } from './Json/router-data';
 import { JsStoragesRouterMetaData } from './JsStorages/router-data';
 import { PromisesExcerciseRouterMetaData } from './PromisesExcercise/router-data';
 import { PromisesExcerciseUseRouterMetaData } from './PromisesExcerciseUse/router-data';
+import { LoadUserDetailsRouterMetaData } from './LoadUserDetails/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -60,6 +61,7 @@ export const blockRouterMetaData = [
   JsStoragesRouterMetaData,
   PromisesExcerciseRouterMetaData,
   PromisesExcerciseUseRouterMetaData,
+  LoadUserDetailsRouterMetaData,
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
