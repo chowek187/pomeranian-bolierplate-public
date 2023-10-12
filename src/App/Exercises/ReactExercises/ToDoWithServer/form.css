@@ -1,0 +1,30 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.cofnij {
+    display: flex;
+    height: 56px;
+    padding: 20px 36px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-primary, navy);
+    background: var(--primary-primary, navy);
+    color: white;
+
+}
+.dodaj {
+  display: flex;
+  height: 56px;
+  padding: 20px 36px;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--primary-primary, #FE3756);
+  background: var(--primary-primary, #FE3756);
+  color: white;
+}

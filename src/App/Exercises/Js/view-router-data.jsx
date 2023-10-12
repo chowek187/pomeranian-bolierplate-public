@@ -30,6 +30,11 @@ import { JsStoragesRouterMetaData } from './JsStorages/router-data';
 import { PromisesExcerciseRouterMetaData } from './PromisesExcercise/router-data';
 import { PromisesExcerciseUseRouterMetaData } from './PromisesExcerciseUse/router-data';
 import { LoadUserDetailsRouterMetaData } from './LoadUserDetails/router-data';
+import { AsyncAwaitRouterMetaData } from './AsyncAwait/router-data';
+import { AsyncAwaitExcercisesRouterMetaData } from './AsyncAwaitExcercises/router-data';
+import { PromiseMethodsRouterMetaData } from './PromiseMethods/router-data';
+import { PromiseMethodsExcerciseRouterMetaData } from './PromiseMethodsExcercise/router-data';
+import { LocalDevAndFetchRouterMetaData } from './LocalDevAndFetch/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -62,6 +67,11 @@ export const blockRouterMetaData = [
   PromisesExcerciseRouterMetaData,
   PromisesExcerciseUseRouterMetaData,
   LoadUserDetailsRouterMetaData,
+  AsyncAwaitRouterMetaData,
+  AsyncAwaitExcercisesRouterMetaData,
+  PromiseMethodsRouterMetaData,
+  PromiseMethodsExcerciseRouterMetaData,
+  LocalDevAndFetchRouterMetaData,
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
