@@ -1,30 +1,77 @@
-.form {
+.formMain {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 37px;
 }
-.cofnij {
-    display: flex;
-    height: 56px;
-    padding: 20px 36px;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 16px;
-    border-radius: 8px;
-    border: 1px solid var(--primary-primary, navy);
-    background: var(--primary-primary, navy);
-    color: white;
+.formMedium {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.formSmall {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  align-self: stretch;
+}
+.titleMain {
+  display: flex;
+  padding-left: 0px;
+  align-items: center;
+  gap: 2px;
+  align-self: stretch;
+}
+
+.titleForm {
+  display: flex;
+  height: 48px;
+  padding: 13px 16px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 5px;
+  border: 1px solid var(--grey-300, #C8CBD1);
+  background: #FFF;
+}
+
+.textForm {
+display: flex;
+height: 120px;
+padding: 13px 16px;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+border-radius: 5px;
+border: 1px solid var(--grey-300, #C8CBD1);
+background: #FFF;
+}
+
+.backButton {
+
+border-radius: 8px;
+border: 1px solid var(--secondary-secondary, #23213D);
+background: var(--secondary-secondary, #23213D);
+color: #FFF;
+width: 160px;
+height: 48px;
+}
+
+.addButton {
+
+border-radius: 8px;
+border: 1px solid var(--primary-primary, #FE3756);
+background: var(--primary-primary, #FE3756);
+color: #FFF;
+width: 160px;
+height: 48px;
 
 }
-.dodaj {
+
+.buttonsForm{
   display: flex;
-  height: 56px;
-  padding: 20px 36px;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 16px;
-  border-radius: 8px;
-  border: 1px solid var(--primary-primary, #FE3756);
-  background: var(--primary-primary, #FE3756);
-  color: white;
+  justify-content: right;
+  gap: 16px; 
 }

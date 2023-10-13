@@ -26,28 +26,37 @@ export const TodoForm = ({ backfunction, refreshFunction }) => {
   }
 
   return (
-    <div className="form">
-      <form onSubmit={createTodo}>
-        <h2>Tytuł</h2>
-        <input
-          type="text"
-          value={title}
-          onChange={(e) => setTile(e.target.value)}
-        />
-        <h2>Autor</h2>
-        <input
-          type="text"
-          value={author}
-          onChange={(e) => setAuthor(e.target.value)}
-        />
-        <h2>Treść</h2>
-        <textarea value={note} onChange={(e) => setNote(e.target.value)} />
-
-        {getError && <p className="errorMessage">nie udało się usunąć</p>}
-        <button className="cofnij">COFNIJ</button>
-        <button type="submit" className="dodaj">
-          DODAJ
-        </button>
+    <div className="formMain">
+      <form className="formMedium" onSubmit={createTodo}>
+        <div className="formSmall">
+          <h2 className="titleMain">Tytuł</h2>
+          <input
+            className="titleForm"
+            type="text"
+            value={title}
+            onChange={(e) => setTile(e.target.value)}
+          />
+          <h2 className="titleMain">Autor</h2>
+          <input
+            className="titleForm"
+            type="text"
+            value={author}
+            onChange={(e) => setAuthor(e.target.value)}
+          />
+          <h2 className="titleMain">Treść</h2>
+          <textarea
+            className="textForm"
+            value={note}
+            onChange={(e) => setNote(e.target.value)}
+          />
+        </div>
+        <div className="buttonsForm">
+          {getError && <p className="errorMessage">nie udało się usunąć</p>}
+          <button className="backButton">COFNIJ</button>
+          <button type="submit" className="addButton">
+            DODAJ
+          </button>
+        </div>
       </form>
     </div>
   );
