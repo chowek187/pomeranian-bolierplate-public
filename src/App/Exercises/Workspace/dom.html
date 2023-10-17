@@ -1,0 +1,191 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button class="btn">Kliknij mnie</button>
+<input type="text" class="inpt"/>
+<div className="result"></div>
+<script type="text/javascript">
+// function test(event) {
+//     alert('testowe')
+// }
+// const button = document.querySelector('.btn');
+// //button.addEventListener('click', test, true);
+// //button.removeEventListener('click', test, true);
+// button.removeEventListener('keydown', test, true);
+// // dynamiczny button
+// // const btn2 = document.createElement('button');
+// // btn2.innerHTML = 'Dynamiczny button';
+// // btn2.addEventListener('click', () => {
+// //     console.log('kliknieto dynamiczny button'
+// //     )})
+// // document.body.append(btn2)
+// //input
+// const input = document.querySelector('.inpt');
+// input.addEventListener('change', (event => {
+//     document.querySelector('.result').innerHTML = event.target.value;
+// }))
+//      // const button = document.querySelector('.btn');
+//     // const input = document.querySelector('.input');
+//     // button.innetHTML = "To jest moja inna treść";
+//     // button.style.backgroundColor= "red";
+//     // button.setAttribute('disabled', true);
+//     // input.setAttribute('value', 'siema');
+//     // const div = document.createElement('div');
+//     // div.innerHTML = "jestem nowym divem";
+//     // document.body.append(div);
+//     // document.body.removeChild(input);
+//     // button.style.display = 'none';
+// </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokument</title>
+</head>
+<body>
+    <button id="btn">Kliknij we mnie</button>
+
+    <script type="text/javascript">
+        // Pobieramy przycisk za pomocą jego ID
+        var button = document.getElementById("btn");
+
+        // Dodajemy obsługę zdarzenia kliknięcia
+        button.addEventListener("click", function() {
+            // Zmieniamy tekst przycisku na "Kliknięto we mnie"
+            button.innerHTML = "Kliknięto we mnie";
+        });
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przycisk i div</title>
+    <style>
+        #myDiv {
+            display: block; /* Wyświetlanie początkowe */
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Kiknij przycisk</button>
+    <div id="result">To jest zawartość diva. Kliknij przycisk, aby go ukryć/pokazać.</div>
+
+    <script type="text/javascript">
+        // Pobieramy przycisk oraz div za pomocą ich ID
+        var btn = document.getElementById("btn");
+        var myDiv = document.getElementById("myDiv");
+
+        // Dodajemy obsługę zdarzenia kliknięcia do przycisku
+        btn.addEventListener("click", function() {
+            if (result.style.display === "none" || result.style.display === "") {
+                result.style.display = "block"; // Wyświetl div bo div jest blokowy, do zapamietania, zawsze po ukryciu, trzrba block
+            } else {
+                result.style.display = "none"; // Ukryj div
+            }
+        });
+    </script>
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przycisk i dynamiczny div</title>
+</head>
+<body>
+    <button id="addButton">Dodaj div</button>
+    <div id="container">
+        <Tutaj zostaną dodane dynamicznie tworzone divy -->
+    <!-- </div>
+
+    <script type="text/javascript">
+        // Pobieramy przycisk oraz div kontenera za pomocą ich ID
+        var addButton = document.getElementById("addButton");
+        var container = document.getElementById("container");
+
+        // Dodajemy obsługę zdarzenia kliknięcia do przycisku
+        addButton.addEventListener("click", function() {
+            // Tworzymy nowy div i ustawiamy jego tekst na "jest nas wiele"
+            var newDiv = document.createElement("div");
+            newDiv.textContent = "jest nas wiele";
+
+            // Dodajemy nowy div do diva kontenera
+            container.appendChild(newDiv);
+        });
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przycisk z zliczaniem kliknięć</title>
+</head>
+<body>
+    <button id="clickButton">Kliknij mnie</button>
+    <p>Liczba kliknięć: <span id="clickCount">0</span></p>
+
+    <script type="text/javascript">
+        var clickCount = 0; // Inicjalizujemy liczbę kliknięć
+
+        // Pobieramy przycisk i miejsce na wyświetlenie liczby kliknięć za pomocą ich ID
+        var clickButton = document.getElementById("clickButton");
+        var clickCountDisplay = document.getElementById("clickCount");
+
+        // Dodajemy obsługę zdarzenia kliknięcia do przycisku
+        clickButton.addEventListener("click", function() {
+            // Zwiększamy liczbę kliknięć o 1 za każdym razem, gdy przycisk jest kliknięty
+            clickCount++;
+            
+            // Aktualizujemy wyświetlaną liczbę kliknięć
+            clickCountDisplay.textContent = clickCount;
+        });
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przycisk z zliczaniem kliknięć</title>
+</head>
+<body>
+    <button class="btn">Kliknij mnie</button>
+    <script type="'text/javascript">
+
+const button = document.querySelector('.btn');
+let count = 0;
+
+button.addEventListener('click', (event) => {
+    count++;
+
+    event.target.innerHTML = count;
+})
+    </script>
+    </body>
+        
+    </html>
+   
